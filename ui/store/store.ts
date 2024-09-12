@@ -51,6 +51,7 @@ type TemporaryBackgroundState = {
       name: string;
     }[];
   };
+  // todo: can this be deleted post network controller v20
   providerConfig: {
     chainId: string;
   };
@@ -98,10 +99,10 @@ export type CombinedBackgroundAndReduxState = RootReducerReturnType & {
   send: RootReducerReturnType['send'];
   DNS: RootReducerReturnType['DNS'];
   history: RootReducerReturnType['history'];
-  confirm: RootReducerReturnType['confirm'];
   confirmAlerts: RootReducerReturnType['confirmAlerts'];
   confirmTransaction: RootReducerReturnType['confirmTransaction'];
   swaps: RootReducerReturnType['swaps'];
+  bridge: RootReducerReturnType['bridge'];
   gas: RootReducerReturnType['gas'];
   localeMessages: RootReducerReturnType['localeMessages'];
 };
